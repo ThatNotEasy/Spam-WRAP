@@ -3,23 +3,7 @@ import datetime
 import random
 import string
 import threading
-
-try:
-    import httpx
-except ImportError:
-    print("httpx package not found. Installing...")
-    os.system("pip install httpx")
-    import httpx
-
-# Define script version and window title
-script_version = '4.4.1'
-
-# Print information about the script (without your name and website)
-print("[+] ABOUT SCRIPT:")
-print("[-] With this script, you can obtain unlimited WARP+ referral data.")
-print(f"[-] Version: {script_version}")
-print("[♡] Made with ♡ by Navaneeth K M (nxvvvv)")
-print("--------")
+import httpx
 
 # Initialize user settings
 referrer = ""
